@@ -42,7 +42,7 @@ steps:
           echo "*************** TERRAFORM Security Check ******************"
           echo "******* At environment: ${env} *********************"
           echo "*************************************************"
-          tfsec || exit 1
+          tfsec
           cd ../../
         done
       fi 
